@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
+# NASA x MIS pay x Nacer: NeoWs Visualizer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to NASA x MIS pay x Nacer Visualizer Application: NeoWs Visualizer! This app visualizes data on near-Earth objects, fetched from NASA's Near Earth Object Web Service (NeoWs). It offers clear, interactive visualizations to make data about objects near Earth accessible and informative.
 
-Currently, two official plugins are available:
+#Table of Contents
+Overview
+Tech Stack
+Setup and Installation
+Folder Structure
+Key Features
+Contributing
+License
+Overview
+The goal of this app is to create near-Earth object visualizations that are intuitive and nearly shippable. The data displayed is fetched directly from NASA's NeoWs API, making it a valuable tool for exploring insights into objects close to Earth.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Tech Stack
+The project leverages the following technologies and libraries:
 
-## Expanding the ESLint configuration
+- React + Vite: For a fast and modular development environment.
+- TypeScript: Adds static typing for improved code reliability.
+- Prettier: Ensures code consistency and readability across the project.
+- ESLint: Enforces code quality standards to catch issues early.
+- Husky: Automates quality checks with Git hooks.
+- Tailwind CSS: For streamlined, responsive styling.
+- Recharts: For interactive data visualization.
+- React Table Library: For handling and displaying tabular data.
+- json-as-xlsx: To export JSON data to Excel format, adding flexibility for data sharing.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#Setup and Installation
+To get started with NASA x MIS pay x Nacer: NeoWs Visualizer, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+- Clone the repository:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+git clone https://github.com/Nacer-MEDIOUNI/nasa-x-nacer-neows-visualizer.git
+cd nasa-x-nacer-neows-visualizer
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Install dependencies:
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+npm install
+Run the application:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+npm run dev
+Linting and Formatting:
+
+Linting: Run npm run lint to check for code issues.
+Formatting: Use npm run format to format code using Prettier.
+Testing and Pre-Commit Hooks: Husky is configured to run checks on each commit, ensuring code quality through automated linting and formatting.
+
+#Folder Structure
+The app's folder structure is as follows:
+
+my-app/
+├── node_modules/
+├── src/
+├── assets/
+├── utils/
+├── hooks/
+├── components/
+├── .eslintrc.cjs
+├── index.html
+├── README.md
+├── package.json
+└── vite.config.js
+
+#Key Features
+Near-Earth Object Data: Retrieves and displays data from NASA’s NeoWs API.
+Data Visualization: Uses Recharts for interactive, clear visualizations.
+Data Table: With React Table Library, data tables are easy to read and manipulate.
+Excel Export: Convert JSON data to Excel format with json-as-xlsx.
+Responsive Design: Tailwind CSS ensures the app looks great on any device.
+Automated Code Quality: Prettier, ESLint, and Husky maintain consistent, high-quality code.
+
+#Contributing
+Contributions are welcome! To contribute:
+
+Fork the repository.
+Create a new branch (git checkout -b feat/YourFeature).
+Commit your changes (git commit -m 'Add new feature').
+Push to the branch (git push origin feat/YourFeature).
+Open a Pull Request.
+
+#License
+This project is licensed under the MIT License.
