@@ -2,7 +2,7 @@
 
 Welcome to NASA x MIS pay x Nacer Visualizer Application: NeoWs Visualizer! This app visualizes data on near-Earth objects, fetched from NASA's Near Earth Object Web Service (NeoWs). It offers clear, interactive visualizations to make data about objects near Earth accessible and informative.
 
-#Table of Contents
+# Table of Contents
 Overview
 Tech Stack
 Setup and Installation
@@ -13,7 +13,7 @@ License
 Overview
 The goal of this app is to create near-Earth object visualizations that are intuitive and nearly shippable. The data displayed is fetched directly from NASA's NeoWs API, making it a valuable tool for exploring insights into objects close to Earth.
 
-#Tech Stack
+# Tech Stack
 The project leverages the following technologies and libraries:
 
 - React + Vite: For a fast and modular development environment.
@@ -26,7 +26,7 @@ The project leverages the following technologies and libraries:
 - React Table Library: For handling and displaying tabular data.
 - json-as-xlsx: To export JSON data to Excel format, adding flexibility for data sharing.
 
-#Setup and Installation
+# Setup and Installation
 To get started with NASA x MIS pay x Nacer: NeoWs Visualizer, follow these steps:
 
 - Clone the repository:
@@ -46,7 +46,7 @@ Linting: Run npm run lint to check for code issues.
 Formatting: Use npm run format to format code using Prettier.
 Testing and Pre-Commit Hooks: Husky is configured to run checks on each commit, ensuring code quality through automated linting and formatting.
 
-#Folder Structure
+# Folder Structure
 The app's folder structure is as follows:
 
 my-app/
@@ -62,7 +62,7 @@ my-app/
 ├── package.json
 └── vite.config.js
 
-#Key Features
+# Key Features
 Near-Earth Object Data: Retrieves and displays data from NASA’s NeoWs API.
 Data Visualization: Uses Recharts for interactive, clear visualizations.
 Data Table: With React Table Library, data tables are easy to read and manipulate.
@@ -70,7 +70,7 @@ Excel Export: Convert JSON data to Excel format with json-as-xlsx.
 Responsive Design: Tailwind CSS ensures the app looks great on any device.
 Automated Code Quality: Prettier, ESLint, and Husky maintain consistent, high-quality code.
 
-#Contributing
+# Contributing
 Contributions are welcome! To contribute:
 
 Fork the repository.
@@ -79,5 +79,5 @@ Commit your changes (git commit -m 'Add new feature').
 Push to the branch (git push origin feat/YourFeature).
 Open a Pull Request.
 
-#License
+# License
 This project is licensed under the MIT License.
