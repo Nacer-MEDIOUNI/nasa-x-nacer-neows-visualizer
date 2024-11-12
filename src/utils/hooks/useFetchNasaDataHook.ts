@@ -10,7 +10,7 @@ const useFetchNasaDataHook = () => {
     const fetchNasaData = async () => {
       try {
         const response = await axios.get(
-          "https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=DEMO_KEY",
+          "https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=HCTXq6OHlLqm12FZLcQofcyn8iEBvnEga9Bpw67k",
         );
         const sortedData = response.data.near_earth_objects
           .map((neo) => ({
