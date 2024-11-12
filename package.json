@@ -14,6 +14,8 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@table-library/react-table-library": "^4.1.7",
     "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
