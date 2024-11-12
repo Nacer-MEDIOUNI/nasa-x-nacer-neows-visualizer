@@ -7,8 +7,9 @@ module.exports = {
   },
   theme: {
     extend: {
-      animation: {
-        wiggle: "wiggle 1s ease-in-out infinite",
+      fontFamily: {
+        sans: ["Lato", "Almarai"],
+        arabic: ["Lato", "Almarai"],
       },
     },
   },
